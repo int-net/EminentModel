@@ -1,28 +1,3 @@
-' @startuml Emininent use cases
-
-' title "Emininent use cases"
-
-' actor "Interoperability Community" as iopc
-' actor "Interviewee" as interview
-' actor "Researcher" as rsrch
-
-' usecase "Perform Maturity Assessment" as pma
-' usecase "Questionaire" as Q
-' usecase "Track Maturity" as tm
-
-' interview --o iopc
-
-' rsrch --> pma : "Facilitates"
-' iopc --> pma : "Requests"
-' interview --> Q : "Takes"
-
-' Q --> pma : <<include>>
-' rsrch --> Q : Facilitates
-
-' rsrch --> tm : "creates report"
-' iopc -u-> tm : "consumes report"
-
-' @enduml
 
 @startuml Emininent use cases
 left to right direction
@@ -65,3 +40,31 @@ rsrch --> crmrpt
 rsrch --> crmtrpt
 
 @enduml
+
+
+' @startuml Emininent use cases
+
+' title "Emininent use cases"
+
+' actor "Interoperability Community" as iopc
+' actor "Interviewee" as interview
+' actor "Researcher" as rsrch
+
+' usecase "Perform Maturity Assessment" as pma
+' usecase "Questionaire" as Q
+' usecase "Track Maturity" as tm
+
+' interview --o iopc
+
+' rsrch --> pma : "Facilitates"
+' iopc --> pma : "Requests"
+' interview --> Q : "Takes"
+
+' Q --> pma : <<include>>
+' rsrch --> Q : Facilitates
+
+' rsrch --> tm : "creates report"
+' iopc -u-> tm : "consumes report"
+
+' @enduml
+
