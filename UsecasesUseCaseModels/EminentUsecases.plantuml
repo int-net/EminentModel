@@ -1,0 +1,67 @@
+' @startuml Emininent use cases
+
+' title "Emininent use cases"
+
+' actor "Interoperability Community" as iopc
+' actor "Interviewee" as interview
+' actor "Researcher" as rsrch
+
+' usecase "Perform Maturity Assessment" as pma
+' usecase "Questionaire" as Q
+' usecase "Track Maturity" as tm
+
+' interview --o iopc
+
+' rsrch --> pma : "Facilitates"
+' iopc --> pma : "Requests"
+' interview --> Q : "Takes"
+
+' Q --> pma : <<include>>
+' rsrch --> Q : Facilitates
+
+' rsrch --> tm : "creates report"
+' iopc -u-> tm : "consumes report"
+
+' @enduml
+
+@startuml Emininent use cases
+left to right direction
+
+title "Emininent use cases"
+
+actor "Interoperability \nCommunity" as iopc
+actor "Interviewee" as intrvw
+actor "Researcher" as rsrch
+
+package "Perform Maturity Assessment" {
+    usecase "Create Maturity Report" as crmrpt
+    usecase "Consume Maturity\nAssesment Report" as comrpt
+}
+Package "Fill in\nQuestionaire" {
+    usecase "Take Questionaire" as tq
+    usecase "Process Results" as pr
+
+}
+package "Track Maturity" {
+    usecase "Create Maturity \nTracking report" as crmtrpt
+    usecase "Consume Maturity \nTracking report" as comtrpt
+}
+
+
+crmtrpt --> pr : <<include>>
+crmrpt --> pr : <<include>>
+
+intrvw -r-o iopc
+
+' "Perform Maturity Assessment" ..> "Questionaire" <<depends>>
+iopc --> comrpt
+iopc --> comtrpt
+
+intrvw --> tq
+
+
+rsrch --> pr 
+rsrch --> crmrpt
+rsrch --> crmtrpt
+
+@enduml
