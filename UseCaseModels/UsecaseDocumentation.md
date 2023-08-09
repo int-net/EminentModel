@@ -5,7 +5,7 @@ Eminent will be a tool to measure and track the maturity of an interoperability 
 
 A use case diagram can be found below
 
-![Eminent Use case Overview](../out/UsecasesUsecaseModels/EminentUsecases/Emininent%20use%20cases.png)
+![Eminent Use case Overview](../out/UseCaseModels/EminentUsecases/Emininent%20use%20cases.png)
 
 ## Actors
 
@@ -21,22 +21,22 @@ In the context of interoperability maturity, the community is the most accurate 
 The interoperability community is an actor in the following use cases:
 
 - Request Maturity Assessment
-- Consume Maturity Assessment Report
+<!-- - Consume Maturity Assessment Report -->
 - Request Maturity Tracking 
-- Consume Maturity Tracking Report
+<!-- - Consume Maturity Tracking Report -->
 
 ### Community Member
 
 A community member is a specific organization that considers itself, or is considered by others in the community, a member of the interoperability community. These organizations can belong to any of the groups mentioned in the previous section. They can be large, multi-billion euro organizations or self employed experts/consultants. 
 
-While interoperability communities are the primary object of study for Emminent, a community member can take the maturity assessment by itself if it wishes to develop a strategy for becoming more mature at at (participating in) interoperability itself, or wishes to become more interoperable internally (interoperability across departments/teams etc).
+While interoperability communities are the primary object of study for Eminent, a community member can take the maturity assessment by itself if it wishes to develop a strategy for becoming more mature at at (participating in) interoperability itself, or wishes to become more interoperable internally (interoperability across departments/teams etc).
 
 Community Member is an actor in the following use cases:
 
 - Request Maturity Assessment
-- Consume Maturity Assessment Report
+<!-- - Consume Maturity Assessment Report -->
 - Request Maturity Tracking 
-- Consume Maturity Tracking Report
+<!-- - Consume Maturity Tracking Report -->
 
 ### Interviewee
 
@@ -45,8 +45,7 @@ The interviewee is a subject matter expert that has been indicated by the reques
 The Interviewee is involved in the following use case:
 
 - Take Questionnaire
-
-
+  
 ### Researcher
 
 The researcher is the person or persons gathering raw questionnaire data, assisting the interviewee's, and producing Maturity Assessment Reports and Maturity Tracking Reports.
@@ -59,22 +58,40 @@ Researchers are involved in the following Use Cases:
   
 ## Use cases
 
-### Fill in Questionnaire
+Use cases are the things, typically actions, that the Eminent tool is designed to support. This section will discuss those use cases.
 
+### Gather data through Questionnaire
+
+The main method to gather data for the different Maturity reports, is through the questionnaire.
 
 #### Take Questionnaire
 
+The tool must facilitate a interviewee to answer the questionnaire.
+
 #### Process Results
 
+The researcher must be able to process the questionnaire results.
 
 ### Assess Maturity
 
+An interoperability community
+
 #### Create Maturity Assessment Report
+
+A researcher must be able to combine questionnaire results into a Maturity Assessment Report.
 
 #### Consume Maturity Assessment Report
 
+An Interoperability Community must be able to receive a report describing comparing their maturity in Interoperability to the Interoperability Maturity Model.
+
 ### Track Maturity
 
-#### Create Maturity Tracking Report
+It is desireable to track maturity over time, to get a sense if decisions, whether technical, organizational or policy-wise has positive or negative effects on interoperability.
+
+#### Request Maturity Tracking Report
+
+Interoperability communities and other interested parties must be able to track the maturity of an interoperability community over time.
 
 #### Create Maturity Tracking Report
+
+A Researcher must be able to combine results from multiple interoperability maturity assessments for the same community and use case and combine them into a trend report.

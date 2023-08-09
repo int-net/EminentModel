@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="552px" preserveAspectRatio="none" style="width:845px;height:552px;background:#FFFFFF;" version="1.1" viewBox="0 0 845 552" width="845px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="27.6094" id="_title" style="stroke:none;stroke-width:1.0;" width="155" x="338" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="145" x="343" y="24.5332">Emininent use cases</text><!--MD5=[ecd5e1a869e4be9cdc20e55d821732f8]
+cluster Asses Maturity--><g id="cluster_Asses Maturity"><path d="M338.5,329.1094 L442.5,329.1094 A3.75,3.75 0 0 1 445,331.6094 L452,352.7188 L552.5,352.7188 A2.5,2.5 0 0 1 555,355.2188 L555,511.6094 A2.5,2.5 0 0 1 552.5,514.1094 L338.5,514.1094 A2.5,2.5 0 0 1 336,511.6094 L336,331.6094 A2.5,2.5 0 0 1 338.5,329.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="336" x2="452" y1="352.7188" y2="352.7188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="340" y="345.6426">Asses Maturity</text></g><!--MD5=[a603f239fa0641dc1f5e7308ebac0e78]
+cluster Gather Data \nthrough Questionaire--><g id="cluster_Gather Data \nthrough Questionaire"><path d="M646.5,245.1094 L798.5,245.1094 A3.75,3.75 0 0 1 801,247.6094 L808,286.3281 L835.5,286.3281 A2.5,2.5 0 0 1 838,288.8281 L838,420.6094 A2.5,2.5 0 0 1 835.5,423.1094 L646.5,423.1094 A2.5,2.5 0 0 1 644,420.6094 L644,247.6094 A2.5,2.5 0 0 1 646.5,245.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="644" x2="808" y1="286.3281" y2="286.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="83" x="680" y="261.6426">Gather Data</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="151" x="648" y="279.252">through Questionaire</text></g><!--MD5=[d1aca2fc2e10958723b7608c15aaa8cc]
+cluster Track Maturity--><g id="cluster_Track Maturity"><path d="M342,106.1094 L442,106.1094 A3.75,3.75 0 0 1 444.5,108.6094 L451.5,129.7188 L549,129.7188 A2.5,2.5 0 0 1 551.5,132.2188 L551.5,302.6094 A2.5,2.5 0 0 1 549,305.1094 L342,305.1094 A2.5,2.5 0 0 1 339.5,302.6094 L339.5,108.6094 A2.5,2.5 0 0 1 342,106.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="339.5" x2="451.5" y1="129.7188" y2="129.7188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="343.5" y="122.6426">Track Maturity</text></g><g id="elem_crmrpt"><ellipse cx="445.566" cy="477.0226" fill="#F1F1F1" rx="92.566" ry="20.9132" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="373.566" y="480.7511">Create Maturity Report</text></g><g id="elem_comrpt"><ellipse cx="445.5097" cy="393.0128" fill="#F1F1F1" rx="93.5097" ry="27.9034" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="392.0097" y="387.9366">Request Maturity</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="387.5097" y="405.546">Assesment Report</text></g><g id="elem_tq"><ellipse cx="741.097" cy="318.2288" fill="#F1F1F1" rx="81.097" ry="18.6194" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="682.0843" y="322.1075">Take Questionaire</text></g><g id="elem_pr"><ellipse cx="741.2256" cy="389.0545" fill="#F1F1F1" rx="75.2256" ry="17.4451" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="687.2256" y="393.5711">Process Results</text></g><g id="elem_crmtrpt"><ellipse cx="445.4031" cy="261.0128" fill="#F1F1F1" rx="82.9031" ry="27.9034" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="394.9031" y="255.9366">Create Maturity</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="396.9031" y="273.546">Tracking report</text></g><g id="elem_comtrpt"><ellipse cx="445.4748" cy="170.013" fill="#F1F1F1" rx="89.9748" ry="27.9036" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="389.7409" y="165.0038">Request Maturity</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="396.7409" y="182.6131">Tracking report</text></g><!--MD5=[c74bb830f044c0aeca6cf199eb7462a7]
+entity iopc--><g id="elem_iopc"><ellipse cx="240.5" cy="232.1094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M240.5,240.1094 L240.5,267.1094 M227.5,248.1094 L253.5,248.1094 M240.5,267.1094 L227.5,282.1094 M240.5,267.1094 L253.5,282.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="192" y="298.1426">Interoperability</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="192" y="315.752">Community</text></g><!--MD5=[64b9ee45fd53269cc28b23451fac552c]
+entity cm--><g id="elem_cm"><ellipse cx="68.5" cy="186.6094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M68.5,194.6094 L68.5,221.6094 M55.5,202.6094 L81.5,202.6094 M68.5,221.6094 L55.5,236.6094 M68.5,221.6094 L81.5,236.6094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="6" y="252.6426">Community Member</text></g><!--MD5=[c4dc5d4fd0bbb98e508936c3c5f30280]
+entity intrvw--><g id="elem_intrvw"><ellipse cx="68.5" cy="52.6094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M68.5,60.6094 L68.5,87.6094 M55.5,68.6094 L81.5,68.6094 M68.5,87.6094 L55.5,102.6094 M68.5,87.6094 L81.5,102.6094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="33" y="118.6426">Interviewee</text></g><!--MD5=[fc20fb75d71566dade0debc883336336]
+entity rsrch--><g id="elem_rsrch"><ellipse cx="240.5" cy="446.6094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M240.5,454.6094 L240.5,481.6094 M227.5,462.6094 L253.5,462.6094 M240.5,481.6094 L227.5,496.6094 M240.5,481.6094 L253.5,496.6094 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="203.5" y="512.6426">Researcher</text></g><!--MD5=[79af9c31d59ed6e1a61f8512dc683aae]
+link crmtrpt to pr--><g id="link_crmtrpt_pr"><path d="M490.54,284.7794 C528.47,304.6694 585,333.1194 636,354.1094 C653.31,361.2294 672.65,368.0494 689.92,373.7394 " fill="none" id="crmtrpt-to-pr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="694.73,375.3094,687.403,368.7279,689.9739,373.7669,684.935,376.3377,694.73,375.3094" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="572" y="321.6045">«include»</text></g><!--MD5=[1700ecd895e9c107fdc6b6d3c4bf091b]
+link crmrpt to pr--><g id="link_crmrpt_pr"><path d="M502.05,460.4494 C555.98,444.2794 637.15,419.9494 689.35,404.2994 " fill="none" id="crmrpt-to-pr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="694.31,402.8094,684.5419,401.5508,689.5189,404.2396,686.8302,409.2166,694.31,402.8094" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="572" y="421.6045">«include»</text></g><!--MD5=[91b59ed4e79e571563dfb50738588373]
+link intrvw to cm--><g id="link_intrvw_cm"><path d="M68.5,122.3394 C68.5,136.5094 68.5,150.6694 68.5,164.8394 " fill="none" id="intrvw-to-cm" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="68.5,177.8494,72.5,171.8494,68.5,165.8494,64.5,171.8494,68.5,177.8494" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0f25b5ae71d4b2f36a9203ab307217ce]
+link cm to iopc--><g id="link_cm_iopc"><path d="M131.35,236.7594 C146.93,241.7094 163.63,247.0094 179.13,251.9294 " fill="none" id="cm-to-iopc" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="191.82,255.9594,187.3142,250.3293,180.3842,252.3231,184.89,257.9532,191.82,255.9594" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[24e4ad1ac3433fc1767db59b80a02716]
+link iopc to comrpt--><g id="link_iopc_comrpt"><path d="M289.09,299.7094 C322.07,319.5294 365.73,345.7694 398.38,365.3894 " fill="none" id="iopc-to-comrpt" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="402.71,367.9894,397.0703,359.9151,398.4288,365.4064,392.9375,366.765,402.71,367.9894" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[abde94bd5a6f5996445f9139e0763c60]
+link iopc to comtrpt--><g id="link_iopc_comtrpt"><path d="M289.4,237.6094 C301.69,229.7194 315.09,221.6894 328,215.1094 C344.24,206.8294 362.39,199.1294 379.43,192.5294 " fill="none" id="iopc-to-comtrpt" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="384.2,190.6994,374.365,190.1766,379.5296,192.4847,377.2215,197.6493,384.2,190.6994" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2751707eadff031dc865c7cc7a4779ed]
+link cm to comrpt--><g id="link_cm_comrpt"><path d="M99.92,256.3694 C122.52,282.8394 155.63,316.4094 192,336.1094 C240.8,362.5494 301.29,376.7394 350.82,384.3594 " fill="none" id="cm-to-comrpt" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="355.89,385.1194,347.5844,379.8262,350.9455,384.3763,346.3955,387.7374,355.89,385.1194" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[018b17230c36bf57413bc76155e8dd16]
+link cm to comtrpt--><g id="link_cm_comtrpt"><path d="M131,209.3994 C192.26,201.7194 286.92,189.8594 356.2,181.1794 " fill="none" id="cm-to-comtrpt" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="361.56,180.5094,352.1283,177.6733,356.5997,181.1383,353.1347,185.6097,361.56,180.5094" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7b3f559c69dc093e588816e65156828f]
+link intrvw to tq--><g id="link_intrvw_tq"><path d="M104.05,77.9794 C187.8,67.2094 406.29,49.1594 563,126.1094 C641.14,164.4794 701.63,253.2994 727,295.3094 " fill="none" id="intrvw-to-tq" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="729.63,299.7094,728.4535,289.931,727.0681,295.4156,721.5835,294.0302,729.63,299.7094" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e26a4c618ca2dad215ad2709f0304f37]
+link rsrch to pr--><g id="link_rsrch_pr"><path d="M277.9,496.5594 C292.96,503.5594 310.88,510.5994 328,514.1094 C430.32,535.0694 463.45,545.7194 563,514.1094 C627.78,493.5394 689.27,439.7494 719.86,409.8694 " fill="none" id="rsrch-to-pr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="723.44,406.3494,714.2193,409.8104,719.876,409.8562,719.8302,415.5128,723.44,406.3494" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[fe84b3b11d559dc0600cd7065ed9ecb4]
+link rsrch to crmrpt--><g id="link_rsrch_crmrpt"><path d="M277.79,477.1094 C297.38,477.1094 322.59,477.1094 347.45,477.1094 " fill="none" id="rsrch-to-crmrpt" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="352.74,477.1094,343.74,473.1094,347.74,477.1094,343.74,481.1094,352.74,477.1094" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[208aa69d261290edd0e040853c3bc51f]
+link rsrch to crmtrpt--><g id="link_rsrch_crmtrpt"><path d="M263.28,437.9994 C279.21,411.3094 302.43,376.0594 328,349.1094 C349.76,326.1694 377.97,304.6994 401.19,288.6994 " fill="none" id="rsrch-to-crmtrpt" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="405.46,285.7794,395.7746,287.5663,401.3352,288.6054,400.2962,294.166,405.46,285.7794" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b8ae6305049aee96500d46d1e2919324]
+@startuml Emininent use cases
+left to right direction
+
+title "Emininent use cases"
+
+actor "Interoperability \nCommunity" as iopc
+actor "Community Member" as cm
+actor "Interviewee" as intrvw
+actor "Researcher" as rsrch
+
+package "Asses Maturity" {
+    usecase "Create Maturity Report" as crmrpt
+    usecase "Request Maturity\nAssesment Report" as comrpt
+}
+Package "Gather Data \nthrough Questionaire" {
+    usecase "Take Questionaire" as tq
+    usecase "Process Results" as pr
+
+}
+package "Track Maturity" {
+    usecase "Create Maturity \nTracking report" as crmtrpt
+    usecase "Request Maturity \nTracking report" as comtrpt
+}
+
+
+crmtrpt - -> pr : <<include>>
+crmrpt - -> pr : <<include>>
+
+intrvw -r-o cm
+cm - -o iopc
+
+' "Perform Maturity Assessment" ..> "Questionaire" <<depends>>
+iopc - -> comrpt
+iopc - -> comtrpt
+
+cm - -> comrpt
+cm - -> comtrpt
+
+
+intrvw - -> tq
+
+
+rsrch - -> pr 
+rsrch - -> crmrpt
+rsrch - -> crmtrpt
+
+@enduml
+
+@startuml Emininent use cases
+left to right direction
+
+title "Emininent use cases"
+
+actor "Interoperability \nCommunity" as iopc
+actor "Community Member" as cm
+actor "Interviewee" as intrvw
+actor "Researcher" as rsrch
+
+package "Asses Maturity" {
+    usecase "Create Maturity Report" as crmrpt
+    usecase "Request Maturity\nAssesment Report" as comrpt
+}
+Package "Gather Data \nthrough Questionaire" {
+    usecase "Take Questionaire" as tq
+    usecase "Process Results" as pr
+
+}
+package "Track Maturity" {
+    usecase "Create Maturity \nTracking report" as crmtrpt
+    usecase "Request Maturity \nTracking report" as comtrpt
+}
+
+
+crmtrpt - -> pr : <<include>>
+crmrpt - -> pr : <<include>>
+
+intrvw -r-o cm
+cm - -o iopc
+
+iopc - -> comrpt
+iopc - -> comtrpt
+
+cm - -> comrpt
+cm - -> comtrpt
+
+
+intrvw - -> tq
+
+
+rsrch - -> pr 
+rsrch - -> crmrpt
+rsrch - -> crmtrpt
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
