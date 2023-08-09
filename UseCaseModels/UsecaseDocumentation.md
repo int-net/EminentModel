@@ -3,7 +3,7 @@
 Eminent will be a tool to measure and track the maturity of an interoperability community. This section documents the use cases the tool aims to support and the actors that will be using it.
 
 
-A use case diagram can be found below
+A use case diagram can be found below.
 
 ![Eminent Use case Overview](../out/UseCaseModels/EminentUsecases/Emininent%20use%20cases.png)
 
