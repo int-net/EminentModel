@@ -1,0 +1,49 @@
+@startuml Interviewing Process
+
+|Researcher|
+|Interviewee|
+start
+|Researcher|
+
+repeat
+package explain-interview {
+:Explain interviewing process;
+:Explain scope of the interview;
+}
+|Interviewee|
+repeat while (any questions) is (yes)
+
+repeat :answer questionaire;
+|Researcher|
+backward :Answer questions;
+
+|Interviewee|
+repeat while (Question about questionaire?) is (yes) 
+
+|Researcher|
+
+:Request permission \n for privacy sensitive information \n to be used for future analysis;
+
+|Interviewee|
+:Grant or deny permission \n for privacy sensitive information \n to be used for future analysis;
+
+|Researcher|
+
+if (permission granted) then (yes)
+:Record permission \nin metadata database;
+:Record personal \ninformation to the \nmetadata database;
+else (no)
+:Record denied permission \nin metadata database;
+endif
+
+:Enter Metadata into \nmetadata database;
+:Enter Questionaire \ninto queestionaire database;
+
+
+
+
+
+
+
+end
+@enduml

@@ -1,0 +1,52 @@
+@startuml Track Maturity PersonBorderThickness
+|Researcher|
+|Interoperability Community\nand/or Community Member|
+start
+:Request Interoperability \nMaturity Tracking Report;
+
+
+|Researcher|
+
+:Determine scope;
+
+ package Gather-Data {
+
+    fork
+    :Gather Interoperability \nMaturity reports \nand raw interview data \nfrom publicly \navailable sources;
+    :Request confidential metadata;
+
+    |Interoperability Community\nand/or Community Member|
+    :Provide confidential \nmetadata for which \npermission was granted;
+
+    fork again
+    |Researcher|
+    :Request prior \nconfidential interoperability \nmaturity assessment reports\nand raw interview data ;
+
+    |Interoperability Community\nand/or Community Member|
+    :Provide available reports;
+
+    |Researcher|
+    end fork
+ }
+|Researcher|
+ package Combine-Data {
+    :Filter reports \non matching SGAM \nDomains and Zones \nof the usecase;
+    :Make corrections \nfor changes \nin methodology;
+    :Make corrections \nfor changes \nin questionaire;
+    if (Ensure that for \neach time step, \nenough Comunity \nMembers participated) then (yes)
+    :Use time point \nin tracking report;
+    else (no)
+    :Discard time point data;
+    endif
+    :Clarify data \ninconsistencies with \noriginal Researcher;
+ }
+
+ :Create Interoperability \nMaturity Tracking Report;
+
+|Interoperability Community\nand/or Community Member|
+:Receive Interoperability \nMaturity Tracking Report;
+end
+
+
+
+@enduml

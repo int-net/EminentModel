@@ -1,0 +1,40 @@
+@startuml Assess Maturity Process
+
+
+|Interoperability Community|
+|Community Memebr|
+|Interviewee|
+|Researcher|
+|Interoperability Community|
+start
+: request maturity assessment ; 
+
+|Researcher|
+
+: Determine SGAM \nDomains and Zones \nof the usecase ;
+: Request list \nof interviewees ;
+
+|Interoperability Community|
+:Select representative \ngroup of participants; 
+
+group Interview 
+    |Interviewee|
+    fork
+    :all interviewees \ntake interview;
+    fork again
+    |Researcher|
+    :interview all \nparticipants;
+    end fork
+
+end group 
+
+:Determine maturity\nbased on individual \ninterviews;
+:Combine interview \nresults to determine \ncommunity based \nmaturity assessment;
+:Create Maturity\nAssesment report;
+
+|Interoperability Community|
+:Receive Interoperability \nMaturity Report;
+
+
+end
+@enduml

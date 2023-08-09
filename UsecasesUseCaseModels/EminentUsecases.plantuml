@@ -5,10 +5,11 @@ left to right direction
 title "Emininent use cases"
 
 actor "Interoperability \nCommunity" as iopc
+actor "Community Member" as cm
 actor "Interviewee" as intrvw
 actor "Researcher" as rsrch
 
-package "Perform Maturity Assessment" {
+package "Asses Maturity" {
     usecase "Create Maturity Report" as crmrpt
     usecase "Consume Maturity\nAssesment Report" as comrpt
 }
@@ -26,11 +27,16 @@ package "Track Maturity" {
 crmtrpt --> pr : <<include>>
 crmrpt --> pr : <<include>>
 
-intrvw -r-o iopc
+intrvw -r-o cm
+cm --o iopc
 
 ' "Perform Maturity Assessment" ..> "Questionaire" <<depends>>
 iopc --> comrpt
 iopc --> comtrpt
+
+cm --> comrpt
+cm --> comtrpt
+
 
 intrvw --> tq
 
@@ -40,31 +46,3 @@ rsrch --> crmrpt
 rsrch --> crmtrpt
 
 @enduml
-
-
-' @startuml Emininent use cases
-
-' title "Emininent use cases"
-
-' actor "Interoperability Community" as iopc
-' actor "Interviewee" as interview
-' actor "Researcher" as rsrch
-
-' usecase "Perform Maturity Assessment" as pma
-' usecase "Questionaire" as Q
-' usecase "Track Maturity" as tm
-
-' interview --o iopc
-
-' rsrch --> pma : "Facilitates"
-' iopc --> pma : "Requests"
-' interview --> Q : "Takes"
-
-' Q --> pma : <<include>>
-' rsrch --> Q : Facilitates
-
-' rsrch --> tm : "creates report"
-' iopc -u-> tm : "consumes report"
-
-' @enduml
-
