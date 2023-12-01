@@ -1,0 +1,68 @@
+@startuml Answer Set Profile
+
+class "intnet:AnswerSet" as Anss {
+    sosa:resultTime (1..1): xsd:date
+}
+
+class "intnet:Answer" as Ans {
+    sosa:hasSimpleResult [1..1] : xsd:int/xsd:boolean
+}
+class "intnet:QuestionnaireVersion" as QRV {
+    dcat:version [1..1] : xsd:string
+}
+
+class "intnet:QuestionVersion" as QV {
+    intnet:Phrasing [1..1] : xsd:string
+}
+
+class "foaf:Person" as Person
+
+class "org:Organization" as Organization {
+    foaf:name [0..1] : xsd:string
+    foaf:homepage [0..1] : xsd:anyURI
+}
+
+note right : "name and homepage \nattributes are confidential \ninformation. Permission needs \nto be granted by the \norganization to publish \nthis data" 
+
+class "intnet:FocusArea" as FA
+
+enum "intnet:SGAMZone" as iopz {
+    sgam:Process 
+    sgam:Field 
+    sgam:Operation
+    sgam:Enterprise
+    sgam:Market
+}
+
+enum "intnet:SGAMDomain" as iopd {
+    sgam:CustomerPremises
+    sgam:DER 
+    sgam:Distribution
+    sgam:Transmission
+    sgam:Generation
+}
+
+enum "intnet:SGAMInteroperabilitylayer" as iopl {
+    sgam:ComponentLayer
+    sgam:CommunicationLayer
+    sgam:InformationLayer
+    sgam:FunctionLayer
+    sgam:BusinessLayer
+    sgam:RegulatoryLayer
+}
+
+Anss --> Ans : "dcterms:hasPart[1..*]"
+
+Anss --> QRV : "sosa:usedProcedure [1..1]"
+Ans --> QV : "sosa:usedProcedure [1..1]"
+
+Anss --> Person :"prov:wasQuotedFrom[1..1]"
+Person --> Organization : "prov:actedOnBehalfOf"
+
+FA --> iopd : "intnet:inDomain[1..*]"
+FA --> iopl : "intnet:onLayer[1..*]"
+FA --> iopz : "intnet:inZone[1..*]"
+Person --> FA : "intnet:AreaOfExpertise"
+Organization --> FA : "intnet:AreaOfOperation"
+
+@enduml

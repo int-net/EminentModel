@@ -1,0 +1,107 @@
+@startuml Eminent Vocabulary
+
+' left to right direction
+
+package Questionaire {
+    class "sosa:Procedure" as Procedure
+    class "sosa:FeatureOfInterest" as FOI
+    class "sosa:ObservableProperty" as OP
+    Object "intnet:InteroperabilityMaturity" as IM 
+    class "intnet:Questionnaire" as QR 
+    class "intnet:QuestionnaireVersion" as QRV
+    class "intnet:Question" as Q
+    class "intnet:QuestionVersion" as QV{
+            intnet:Phrasing
+    }
+    class "intnet:Characteristic" as Char
+    class "intnet:Dimension" as Dimension
+    class "intnet:Category" as Category
+}
+
+package Answers {
+    class "sosa:Observation" as Observation
+    class "sosa:Result" as Result
+    class "intnet:Answer" as Ans {
+        sosa:hasSimpleResult
+    }
+    class "intnet:AnswerSet" as Anss {
+        sosa:resultTime
+    }
+
+}
+
+package Provenance {
+    class "intnet:InteroperabilityCommunity" as iopc 
+    class "prov:Agent" as Agent
+    class "foaf:Person" as Person
+    class "org:Organization" as Organization
+    class "intnet:FocusArea" as FA
+
+    enum "intnet:SGAMZone" as iopz {
+        sgam:Process 
+        sgam:Field 
+        sgam:Operation
+        sgam:Enterprise
+        sgam:Market
+    }
+
+    enum "intnet:SGAMDomain" as iopd {
+        sgam:CustomerPremises
+        sgam:DER 
+        sgam:Distribution
+        sgam:Transmission
+        sgam:Generation
+    }
+
+    enum "intnet:SGAMInteroperabilitylayer" as iopl {
+        sgam:ComponentLayer
+        sgam:CommunicationLayer
+        sgam:InformationLayer
+        sgam:FunctionLayer
+        sgam:BusinessLayer
+        sgam:RegulatoryLayer
+    }   
+}
+
+FOI <|-- iopc
+OP <|-- Dimension
+OP <|- Category
+QR <|-- QRV
+Procedure <|-- QR
+Procedure <|-- Q
+Q <|-- QV
+OP <|-- Char
+Observation <|-- Ans
+Observation <|-- Anss
+Agent <|-- Person
+Agent <|-- Organization
+
+Person --> Organization : "org:memberOf"
+Person --> Organization : "prov:actedOnBehalfOf"
+
+Person --> FA : "intnet:AreaOfExpertise"
+Organization --> FA : "intnet:areaOfOperation"
+
+FA --> iopd : "intnet:inDomain"
+FA --> iopl : "intnet:onLayer"
+FA --> iopz : "intnet:inZone"
+
+Observation --> FOI : "sosa:hasFeatureOfInterest"
+Observation --> Procedure : "sosa:usedProcedure"
+Observation --> Result : "sosa:hasResult"
+Observation --> OP : "sosa:observableProperty"
+
+QR --> Q : "dcterms:hasPart"
+QR --> QRV : "dcterms:hasVersion"
+QRV --> QR : "dcterms:isVersionOf"
+Q --> QV : "dcterms:hasVersion"
+QV --> Q : "dcterms:isVersionOf"
+Anss --> Ans : "dcterms:hasPart"
+Anss --> Person :"prov:wasQuotedFrom"
+
+Dimension --> Category : "dcterms:isPartOf"
+Char --> Dimension : "sosa:isPropertyOf"
+Procedure --> OP : "intnet:measures"
+iopc --> FA : "intnet:areaOfOperation"
+
+@enduml
