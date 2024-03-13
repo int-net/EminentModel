@@ -1,0 +1,23 @@
+@startuml
+
+class "emm:Characteristic" as char{
+    emm:maturityScore xsd:int
+    skos:definition : xsd:string
+}
+
+class "emm:Dimension" as dim {
+    skos:definition : xsd:string
+}
+
+class "emm:Capability" as cap{
+    skos:definition : xsd:string
+}
+
+
+char --> dim : "dcterms:isPartOf"
+
+dim --> cap : "dcterms:isPartOf"
+
+cap --> cap :"dcterms:isPartOf"
+
+@enduml

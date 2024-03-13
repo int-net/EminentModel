@@ -1,39 +1,37 @@
 @startuml Questionaire Profile
 
 
-class "intnet:QuestionnaireVersion" as QRV {
+class "ema:QuestionnaireVersion" as QRV {
+    dcterms:identifier : xsd:string
     dcat:version [1..1] : xsd:string
+    skos:prefLabel : xsd:string
 }
-class "intnet:QuestionVersion" as QV {
-    dcat:version [1..1] : xsd:string
-    intnet:Phrasing [1..1] : xsd:string
+
+class "intnet:Question" as Q{
+    dcterms:identifier [1..1] : xsd:string    
+    ema:Phrasing [1..1] : xsd:string
+    dcterms:identifier xsd:string
 }
-class "intnet:Question" as Q
+
 class "intnet:Questionnaire" as QR 
 
-class "intnet:Characteristic" as Char {
-    skos:definition [1..1]
-    skos:example []
-}
+
+
+
 class "intnet:Dimension" as Dimension {
-    skos:definition [1..1]
+    
 }
 
-class "intnet:Category" as Cat{
-    skos:definition [1..1]
-}
 
 
 QR <-- QRV : "dcterms:isVersionOf"
 Q <-- QRV : "dcterms:hasPart"
 
-Q --> QV : "dcterms:hasVersion"
 
-QR <-- Q : "dcterms:isPartOf" 
 
-Dimension --> Cat : "dcterms:isPartOf"
-Char --> Dimension : "sosa:isPropertyOf"
+QRV <-- Q : "dcterms:isPartOf" 
 
-Q --> Char : "intnet:measures"
+
+Q --> Dimension : "ema:measures"
 
 @enduml

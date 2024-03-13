@@ -101,7 +101,7 @@ Anss --> Person :"prov:wasQuotedFrom"
 
 Dimension --> Category : "dcterms:isPartOf"
 Char --> Dimension : "sosa:isPropertyOf"
-Procedure --> OP : "intnet:measures"
+Q --> Dimension : "intnet:measures"
 iopc --> FA : "intnet:areaOfOperation"
 
 @enduml
