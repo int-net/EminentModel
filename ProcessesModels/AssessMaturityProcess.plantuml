@@ -1,17 +1,28 @@
 @startuml Assess Maturity Process
 
+sprite $EPRI [376x77/16z] {
+xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
+5kFTHnzMn3sGJ7KVkolY7cW6kflT5NBNQtT5t0FHMtLHo3q38ElSprrr3_swx-gYv91UlzQuZxVTwyxvELZLmmbtuGxgSBIg1nFgpjs9kCDX04jtZViS8Dgj
+--d5BdVduzthNlUwrxtkTU_sZFpkTQ-x0kxTNvKoxgyv4-SY_z7TTnoOL-Cz3dnc-NDtINdtmF7tKm13T-NT9GNTPNKtiME-Bfoykpx2NGgxA-BkFijfO8-x
+A-REr5rrztHDx7LtxZQmpNrkQs1Vv3vVlO5zv_OCANS0MBhz3WDtGtZPSG92xZoQq1MizkDY07Ft_2spdaSrdAq2HDovpAhpJT_aVgfSzrSe472lEmdtkfDm
+hpjrhtlTwrxtkjUzxjsEh7lTkx_wVEfkk3RSE7Tsn_0qkU0iS9__fiaukznr6tVTrPq5pnTRu3u8GDq1jhZNdRe31BOawWwGSQyxTdVg3e1_Jx7kPnXIUsoQ
+vRY9EzZTMU6E_RRXmOfZJwebvdvM7XYksAKEHDYltNFspCi9WL1MuHN_1
+}
 
-|Interoperability Community|
-|Community Memebr|
+footer  <$EPRI,scale=0.12,color=darkblue>  CC BY 4.0
+
+title Assess Maturity Process
 |Interviewee|
-|Researcher|
 |Interoperability Community|
+
+
+|Researcher|
+
 start
 : request maturity assessment ; 
 
 |Researcher|
 
-: Determine SGAM \nDomains and Zones \nof the usecase ;
 : Request list \nof interviewees ;
 
 |Interoperability Community|
@@ -28,7 +39,22 @@ group Interview
 
 end group 
 
-:Determine maturity\nbased on individual \ninterviews;
+
+: Ask permission to publish data ;
+
+|Interoperability Community|
+
+: grant or deny permission to publish data ; 
+|Researcher|
+if(permission granted) then (yes)
+:publish responses to \nEMINENTResultsDatabase \nrespository ;
+
+else (no)
+
+:archive responses \nin private repository;
+
+endif
+
 :Combine interview \nresults to determine \ncommunity based \nmaturity assessment;
 :Create Maturity\nAssesment report;
 

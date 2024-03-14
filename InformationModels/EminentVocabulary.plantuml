@@ -15,12 +15,12 @@ footer  <$EPRI,scale=0.12,color=darkblue>  CC BY 4.0
 title EMINENT Information Model
 
 
-     class "sosa:Procedure" as Procedure
+class "sosa:Procedure" as Procedure
 
-     class "ema:Questionnaire" as QR 
-     class "ema:QuestionnaireVersion" as QRV
+class "ema:Questionnaire" as QR 
+class "ema:QuestionnaireVersion" as QRV
 
-    class "sosa:Observation" as Observation
+class "sosa:Observation" as Observation
 
 
 class "ema:AnswerSet" as Anss {
@@ -32,8 +32,6 @@ class "ema:Answer" as Ans {
 }
 class "ema:QuestionnaireVersion" as QRV {
 }
-
-
 
 class "foaf:Person" as Person
 
@@ -71,9 +69,6 @@ enum "sgam:Interoperabilitylayer" as iopl {
     sgam:BusinessLayer
     sgam:RegulatoryLayer
 }
-
-
-
 
 class "ema:QuestionnaireVersion" as QRV {
     dcterms:identifier : xsd:string

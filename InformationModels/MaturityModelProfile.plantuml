@@ -13,4 +13,28 @@ footer  <$EPRI,scale=0.12,color=darkblue>  CC BY 4.0
 
 title Maturity Model Profile
 
+
+
+class "emm:Characteristic" as char{
+    emm:maturityScore xsd:int
+    skos:definition : xsd:string
+}
+
+
+class "emm:Dimension" as Dimension {
+    skos:definition : xsd:string
+}
+
+
+class "emm:Capability" as cap {
+    skos:definition : xsd:string
+}
+
+cap --> cap : "dcterms:isPartOf [*..1]"
+
+char --> Dimension : "dcterms:isPartOf"
+
+Dimension --> cap : "dcterms:isPartOf"
+Dimension --> cap :"dcterms:isPartOf"
+
 @enduml

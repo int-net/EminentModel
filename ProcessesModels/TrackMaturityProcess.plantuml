@@ -13,10 +13,7 @@ start
 
     fork
     :Gather Interoperability \nMaturity reports \nand raw interview data \nfrom publicly \navailable sources;
-    :Request confidential metadata;
 
-    |Interoperability Community\nand/or Community Member|
-    :Provide confidential \nmetadata for which \npermission was granted;
 
     fork again
     |Researcher|
@@ -30,7 +27,6 @@ start
  }
 |Researcher|
  package Combine-Data {
-    :Filter reports \non matching SGAM \nDomains and Zones \nof the usecase;
     :Make corrections \nfor changes \nin methodology;
     :Make corrections \nfor changes \nin questionaire;
     if (Ensure that for \neach time step, \nenough Comunity \nMembers participated) then (yes)
