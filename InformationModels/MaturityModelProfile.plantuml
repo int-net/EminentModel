@@ -1,4 +1,4 @@
-@startuml Questionaire Profile
+@startuml Maturity Model Profile
 
 sprite $EPRI [376x77/16z] {
 xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
@@ -9,43 +9,8 @@ hpjrhtlTwrxtkjUzxjsEh7lTkx_wVEfkk3RSE7Tsn_0qkU0iS9__fiaukznr6tVTrPq5pnTRu3u8GDq1
 vRY9EzZTMU6E_RRXmOfZJwebvdvM7XYksAKEHDYltNFspCi9WL1MuHN_1
 }
 
-
 footer  <$EPRI,scale=0.12,color=darkblue>  CC BY 4.0
 
-title Questionaire Profile
-
-
-class "ema:QuestionnaireVersion" as QRV {
-    dcterms:identifier : xsd:string
-    dcat:version [1..1] : xsd:string
-    skos:prefLabel : xsd:string
-}
-
-class "intnet:Question" as Q{
-    dcterms:identifier [1..1] : xsd:string    
-    ema:Phrasing [1..1] : xsd:string
-    dcterms:identifier xsd:string
-}
-
-class "intnet:Questionnaire" as QR 
-
-
-
-
-class "intnet:Dimension" as Dimension {
-    
-}
-
-
-
-QR <-- QRV : "dcterms:isVersionOf"
-Q <-- QRV : "dcterms:hasPart"
-
-
-
-QRV <-- Q : "dcterms:isPartOf" 
-
-
-Q --> Dimension : "ema:measures"
+title Maturity Model Profile
 
 @enduml

@@ -1,107 +1,143 @@
 @startuml Eminent Vocabulary
 
-' left to right direction
-
-package Questionaire {
-    class "sosa:Procedure" as Procedure
-    class "sosa:FeatureOfInterest" as FOI
-    class "sosa:ObservableProperty" as OP
-    Object "intnet:InteroperabilityMaturity" as IM 
-    class "intnet:Questionnaire" as QR 
-    class "intnet:QuestionnaireVersion" as QRV
-    class "intnet:Question" as Q
-    class "intnet:QuestionVersion" as QV{
-            intnet:Phrasing
-    }
-    class "intnet:Characteristic" as Char
-    class "intnet:Dimension" as Dimension
-    class "intnet:Category" as Category
+sprite $EPRI [376x77/16z] {
+xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
+5kFTHnzMn3sGJ7KVkolY7cW6kflT5NBNQtT5t0FHMtLHo3q38ElSprrr3_swx-gYv91UlzQuZxVTwyxvELZLmmbtuGxgSBIg1nFgpjs9kCDX04jtZViS8Dgj
+--d5BdVduzthNlUwrxtkTU_sZFpkTQ-x0kxTNvKoxgyv4-SY_z7TTnoOL-Cz3dnc-NDtINdtmF7tKm13T-NT9GNTPNKtiME-Bfoykpx2NGgxA-BkFijfO8-x
+A-REr5rrztHDx7LtxZQmpNrkQs1Vv3vVlO5zv_OCANS0MBhz3WDtGtZPSG92xZoQq1MizkDY07Ft_2spdaSrdAq2HDovpAhpJT_aVgfSzrSe472lEmdtkfDm
+hpjrhtlTwrxtkjUzxjsEh7lTkx_wVEfkk3RSE7Tsn_0qkU0iS9__fiaukznr6tVTrPq5pnTRu3u8GDq1jhZNdRe31BOawWwGSQyxTdVg3e1_Jx7kPnXIUsoQ
+vRY9EzZTMU6E_RRXmOfZJwebvdvM7XYksAKEHDYltNFspCi9WL1MuHN_1
 }
 
-package Answers {
+
+footer  <$EPRI,scale=0.12,color=darkblue>  CC BY 4.0
+
+title EMINENT Information Model
+
+
+     class "sosa:Procedure" as Procedure
+
+     class "ema:Questionnaire" as QR 
+     class "ema:QuestionnaireVersion" as QRV
+
     class "sosa:Observation" as Observation
-    class "sosa:Result" as Result
-    class "intnet:Answer" as Ans {
-        sosa:hasSimpleResult
-    }
-    class "intnet:AnswerSet" as Anss {
-        sosa:resultTime
-    }
+
+
+class "ema:AnswerSet" as Anss {
+    sosa:resultTime (1..1): xsd:date
+}
+
+class "ema:Answer" as Ans {
+    ema:result_text : xsd:string
+}
+class "ema:QuestionnaireVersion" as QRV {
+}
+
+
+
+class "foaf:Person" as Person
+
+class "org:Organization" as Organization {
+    ema:description : xsd:string
+    ema:organizationSize : 
 
 }
 
-package Provenance {
-    class "intnet:InteroperabilityCommunity" as iopc 
-    class "prov:Agent" as Agent
-    class "foaf:Person" as Person
-    class "org:Organization" as Organization
-    class "intnet:FocusArea" as FA
+note right : "name and homepage \nattributes are confidential \ninformation. Permission needs \nto be granted by the \norganization to publish \nthis data" 
 
-    enum "intnet:SGAMZone" as iopz {
-        sgam:Process 
-        sgam:Field 
-        sgam:Operation
-        sgam:Enterprise
-        sgam:Market
-    }
+class "ema:FocusArea" as FA
 
-    enum "intnet:SGAMDomain" as iopd {
-        sgam:CustomerPremises
-        sgam:DER 
-        sgam:Distribution
-        sgam:Transmission
-        sgam:Generation
-    }
-
-    enum "intnet:SGAMInteroperabilitylayer" as iopl {
-        sgam:ComponentLayer
-        sgam:CommunicationLayer
-        sgam:InformationLayer
-        sgam:FunctionLayer
-        sgam:BusinessLayer
-        sgam:RegulatoryLayer
-    }   
+enum "sgam:Zone" as iopz {
+    sgam:Process 
+    sgam:Field 
+    sgam:Operation
+    sgam:Enterprise
+    sgam:Market
 }
 
-FOI <|-- iopc
-OP <|-- Dimension
-OP <|- Category
-QR <|-- QRV
-Procedure <|-- QR
-Procedure <|-- Q
-Q <|-- QV
-OP <|-- Char
+enum "sgam:Domain" as iopd {
+    sgam:CustomerPremises
+    sgam:DER 
+    sgam:Distribution
+    sgam:Transmission
+    sgam:Generation
+}
+
+enum "sgam:Interoperabilitylayer" as iopl {
+    sgam:ComponentLayer
+    sgam:CommunicationLayer
+    sgam:InformationLayer
+    sgam:FunctionLayer
+    sgam:BusinessLayer
+    sgam:RegulatoryLayer
+}
+
+
+
+
+class "ema:QuestionnaireVersion" as QRV {
+    dcterms:identifier : xsd:string
+    dcat:version [1..1] : xsd:string
+    skos:prefLabel : xsd:string
+}
+
+class "ema:Question" as Q {
+    dcterms:identifier [1..1] : xsd:string    
+    ema:Phrasing [1..1] : xsd:string
+    dcterms:identifier xsd:string
+}
+
+class "emm:Characteristic" as char{
+    emm:maturityScore xsd:int
+    skos:definition : xsd:string
+}
+
+class "emm:Dimension" as Dimension {
+    skos:definition : xsd:string
+}
+
+class "emm:Capability" as cap {
+    skos:definition : xsd:string
+}
+
+
+class "intnet:Questionnaire" as QR 
+
+
+
+QR <-- QRV : "dcterms:isVersionOf"
+Q <-- QRV : "dcterms:hasPart"
+QRV <-- Q : "dcterms:isPartOf" 
+Q --> Dimension : "ema:measures"
+
+
+
+char --> Dimension : "dcterms:isPartOf"
+
+Dimension --> cap : "dcterms:isPartOf"
+
+
+
 Observation <|-- Ans
 Observation <|-- Anss
-Agent <|-- Person
-Agent <|-- Organization
+Procedure <|-- QRV
+Procedure <|-- Q
+Procedure <|-- QR
 
-Person --> Organization : "org:memberOf"
+Anss <-- Ans : "dcterms:isPartOf[1..1]"
+
+Anss --> QRV : "sosa:usedProcedure [1..1]"
+Ans --> Q : "sosa:usedProcedure [1..1]"
+
+Anss --> Person :"prov:wasQuotedFrom[1..1]"
 Person --> Organization : "prov:actedOnBehalfOf"
 
-Person --> FA : "intnet:AreaOfExpertise"
-Organization --> FA : "intnet:areaOfOperation"
+FA --> iopd : "ema:inDomain[1..*]"
+FA --> iopl : "ema:onLayer[1..*]"
+FA --> iopz : "ema:inZone[1..*]"
+Person --> FA : "ema:AreaOfExpertise"
+Organization --> FA : "ema:AreaOfOperation"
 
-FA --> iopd : "intnet:inDomain"
-FA --> iopl : "intnet:onLayer"
-FA --> iopz : "intnet:inZone"
-
-Observation --> FOI : "sosa:hasFeatureOfInterest"
-Observation --> Procedure : "sosa:usedProcedure"
-Observation --> Result : "sosa:hasResult"
-Observation --> OP : "sosa:observableProperty"
-
-QR --> Q : "dcterms:hasPart"
-QR --> QRV : "dcterms:hasVersion"
-QRV --> QR : "dcterms:isVersionOf"
-Q --> QV : "dcterms:hasVersion"
-QV --> Q : "dcterms:isVersionOf"
-Anss --> Ans : "dcterms:hasPart"
-Anss --> Person :"prov:wasQuotedFrom"
-
-Dimension --> Category : "dcterms:isPartOf"
-Char --> Dimension : "sosa:isPropertyOf"
-Q --> Dimension : "intnet:measures"
-iopc --> FA : "intnet:areaOfOperation"
+cap --> cap : "dcterms:isPartOf [*..1]"
 
 @enduml
