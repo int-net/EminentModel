@@ -1,7 +1,24 @@
-@startuml Track Maturity PersonBorderThickness
+@startuml Track Maturity Process
+
+sprite $EPRI [376x77/16z] {
+xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
+5kFTHnzMn3sGJ7KVkolY7cW6kflT5NBNQtT5t0FHMtLHo3q38ElSprrr3_swx-gYv91UlzQuZxVTwyxvELZLmmbtuGxgSBIg1nFgpjs9kCDX04jtZViS8Dgj
+--d5BdVduzthNlUwrxtkTU_sZFpkTQ-x0kxTNvKoxgyv4-SY_z7TTnoOL-Cz3dnc-NDtINdtmF7tKm13T-NT9GNTPNKtiME-Bfoykpx2NGgxA-BkFijfO8-x
+A-REr5rrztHDx7LtxZQmpNrkQs1Vv3vVlO5zv_OCANS0MBhz3WDtGtZPSG92xZoQq1MizkDY07Ft_2spdaSrdAq2HDovpAhpJT_aVgfSzrSe472lEmdtkfDm
+hpjrhtlTwrxtkjUzxjsEh7lTkx_wVEfkk3RSE7Tsn_0qkU0iS9__fiaukznr6tVTrPq5pnTRu3u8GDq1jhZNdRe31BOawWwGSQyxTdVg3e1_Jx7kPnXIUsoQ
+vRY9EzZTMU6E_RRXmOfZJwebvdvM7XYksAKEHDYltNFspCi9WL1MuHN_1
+}
+
+footer  <$EPRI,scale=0.12,color=darkblue>  CC BY 4.0
+
+title Track Maturity Process
+
 |Researcher|
+
+
 |Interoperability Community\nand/or Community Member|
 start
+
 :Request Interoperability \nMaturity Tracking Report;
 
 
@@ -17,10 +34,10 @@ start
 
     fork again
     |Researcher|
-    :Request prior \nconfidential interoperability \nmaturity assessment reports\nand raw interview data ;
+    :Request prior \nconfidential interoperability \nmaturity assessment reports\nand raw response data ;
 
     |Interoperability Community\nand/or Community Member|
-    :Provide available reports;
+    :Provide available reports \nand interview data;
 
     |Researcher|
     end fork

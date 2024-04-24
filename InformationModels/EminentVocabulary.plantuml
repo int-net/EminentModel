@@ -1,5 +1,7 @@
 @startuml Eminent Vocabulary
 
+hide empty members
+
 sprite $EPRI [376x77/16z] {
 xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
 5kFTHnzMn3sGJ7KVkolY7cW6kflT5NBNQtT5t0FHMtLHo3q38ElSprrr3_swx-gYv91UlzQuZxVTwyxvELZLmmbtuGxgSBIg1nFgpjs9kCDX04jtZViS8Dgj
@@ -41,7 +43,6 @@ class "org:Organization" as Organization {
 
 }
 
-note right : "name and homepage \nattributes are confidential \ninformation. Permission needs \nto be granted by the \norganization to publish \nthis data" 
 
 class "ema:FocusArea" as FA
 
@@ -134,5 +135,6 @@ Person --> FA : "ema:AreaOfExpertise"
 Organization --> FA : "ema:AreaOfOperation"
 
 cap --> cap : "dcterms:isPartOf [*..1]"
+Ans --> char : "sosa:hasResult"
 
 @enduml

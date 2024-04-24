@@ -1,5 +1,6 @@
 
 @startuml Emininent use cases
+hide empty members
 left to right direction
 
 title "Emininent use cases"

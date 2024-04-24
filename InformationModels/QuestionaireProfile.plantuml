@@ -1,5 +1,7 @@
 @startuml Questionaire Profile
 
+hide empty members
+
 sprite $EPRI [376x77/16z] {
 xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
 5kFTHnzMn3sGJ7KVkolY7cW6kflT5NBNQtT5t0FHMtLHo3q38ElSprrr3_swx-gYv91UlzQuZxVTwyxvELZLmmbtuGxgSBIg1nFgpjs9kCDX04jtZViS8Dgj
@@ -21,25 +23,25 @@ class "ema:QuestionnaireVersion" as QRV {
     skos:prefLabel : xsd:string
 }
 
-class "intnet:Question" as Q{
+class "ema:Question" as Q{
     dcterms:identifier [1..1] : xsd:string    
     ema:Phrasing [1..1] : xsd:string
     dcterms:identifier xsd:string
 }
 
-class "intnet:Questionnaire" as QR 
+class "ema:Questionnaire" as QR 
 
 
 
 
-class "intnet:Dimension" as Dimension {
+class "emm:Dimension" as Dimension {
     
 }
 
 
 
 QR <-- QRV : "dcterms:isVersionOf"
-Q <-- QRV : "dcterms:hasPart"
+QR <|-- QRV
 
 
 

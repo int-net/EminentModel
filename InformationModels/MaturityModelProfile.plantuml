@@ -1,5 +1,7 @@
 @startuml Maturity Model Profile
 
+hide empty members
+
 sprite $EPRI [376x77/16z] {
 xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
 5kFTHnzMn3sGJ7KVkolY7cW6kflT5NBNQtT5t0FHMtLHo3q38ElSprrr3_swx-gYv91UlzQuZxVTwyxvELZLmmbtuGxgSBIg1nFgpjs9kCDX04jtZViS8Dgj
@@ -35,6 +37,6 @@ cap --> cap : "dcterms:isPartOf [*..1]"
 char --> Dimension : "dcterms:isPartOf"
 
 Dimension --> cap : "dcterms:isPartOf"
-Dimension --> cap :"dcterms:isPartOf"
+
 
 @enduml

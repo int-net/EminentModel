@@ -1,5 +1,7 @@
 @startuml Answer Set Profile
 
+hide empty members
+
 sprite $EPRI [376x77/16z] {
 xTm5SYH144FHVm7T_xYBmJsGktP9FP7AGEEFUePfvZewChmUGoW--Zi6yP68eMNhpdgNT_lXBJLhTrAylDSDxyhb_x0VVuQKWFVbujt7dw28kp4Ow0xS5N5t
 5kFTHnzMn3sGJ7KVkolY7cW6kflT5NBNQtT5t0FHMtLHo3q38ElSprrr3_swx-gYv91UlzQuZxVTwyxvELZLmmbtuGxgSBIg1nFgpjs9kCDX04jtZViS8Dgj
@@ -27,6 +29,8 @@ class "ema:QuestionnaireVersion" as QRV {
 
 class "ema:Question" as QV {
 }
+
+class "emm:Characteristic" as char
 
 
 class "foaf:Person" as Person
@@ -70,6 +74,8 @@ Ans --> Anss : "dcterms:isPartOf[1..1]"
 
 Anss --> QRV : "sosa:usedProcedure [1..1]"
 Ans --> QV : "sosa:usedProcedure [1..1]"
+
+Ans --> char : "sosa:hasResult"
 
 Anss --> Person :"prov:wasQuotedFrom[1..1]"
 Person --> Organization : "prov:actedOnBehalfOf"
